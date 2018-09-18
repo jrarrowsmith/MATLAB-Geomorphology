@@ -1,3 +1,6 @@
+%script to produce swath profile and projected swath profile
+%Needs Topotoolbox
+%JRA September 2018
 clear all
 close all
 bearing_for_profile = -13; %degrees
@@ -37,6 +40,8 @@ y=[3876010
 3874680
 3874400
 3874170];
+
+%don't really need these z values
 z=[652
 647
 645
@@ -55,6 +60,7 @@ hold on
 plot(x,y,'k-')
 text(x,y, point_names)
 
+%Extract the broader swath along the x y path
 SW = SWATHobj(DEM,x,y, 'width',200) %200 m wide swath
 plot(SW)
 title('DEM with swath location 200 m width')
@@ -67,6 +73,7 @@ title('Profile along kinked swath')
 print -dpng 'WRkinkedswath.png'
 print -depsc 'WRkinkedswath.eps'
 
+%Extract a very narrow swath
 SW = SWATHobj(DEM,x,y, 'width',1) %now do the swath again but just 1 m wide
 
 figure(3)

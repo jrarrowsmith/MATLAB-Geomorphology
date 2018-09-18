@@ -1,5 +1,6 @@
 %script to produce swath profile and projected swath profile
 %Needs Topotoolbox
+%addpath(C:\Program Files\MATLAB\topotoolbox-master)
 %JRA September 2018
 clear all
 close all

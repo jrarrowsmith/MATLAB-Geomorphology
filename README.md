@@ -15,6 +15,6 @@ _Items included here:_
     - I put a little piece of that dataset as a geotiff in here as GalwayLakeRd.9GCPs.2cmDEM.crop2.tif 
     - This is crashing occasionally and I cannot quite tell if it is just my MATLAB on my laptop or if it is more pervasive.
     
-  - PBRevolution.m -- this is the PBR evolution code described on the blog post at http://activetectonics.blogspot.com/2022/06/a-simple-evolutionary-model-for-fragile.html
-    - it uses two simple functions to "ripen" the PBRs and then reset them in earthquake "shaking" ripenPBR.m and shakePBRs.m
+- PBRevolution.m -- this is the PBR evolution code described on the blog post at http://activetectonics.blogspot.com/2022/06/a-simple-evolutionary-model-for-fragile.html
+  - it uses two simple functions to "ripen" the PBRs and then reset them in earthquake "shaking" ripenPBR.m and shakePBRs.m
 
